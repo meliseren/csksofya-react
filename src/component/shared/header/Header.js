@@ -10,7 +10,7 @@ const Header = ( {navbarItems} ) => {
         </div>
         <nav>
             <ul>
-                <li><Link to="">Melis</Link></li>
+                <li><Link to="">Anasayfa</Link></li>
                 <li><Link to="/about">Hakkkımızda</Link></li>
                 <li><Link to="/categories">Kategoriler</Link></li>
                 <li><Link to="/gallery">Galeri</Link></li>
