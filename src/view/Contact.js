@@ -27,10 +27,10 @@ const Contact = () => {
       <div className="half-container">
         {GoogleMaps()}
         <div className="contact-text">
-          <p>Seyrantepe Mah. Altınay Cad. & Gökdeniz Sok. No:7 34418 Kağıthane/İstanbul Türkiye</p>
-          <p>info@csksofya.com</p>
-          <p>+90 (533) 150 45 54</p>
-          <p>+90 (530) 178 12 15</p>
+        <i class="fa-solid fa-location-dot"><a>Seyrantepe Mah. Altınay Cad. & Gökdeniz Sok. No:7 34418 Kağıthane/İstanbul Türkiye</a></i>
+          <i className="fa-solid fa-envelope"><a>info@csksofya.com</a></i>
+          <i className="fa-solid fa-phone"><a>+90 (533) 150 45 54</a></i>
+          <i className="fa-solid fa-phone"><a>+90 (530) 178 12 15</a></i>
         </div>
       </div>
     </div>
