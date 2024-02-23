@@ -1,3 +1,105 @@
-h1 {
-    color: rgb(195, 0, 33);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+$box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+$black: #0b0a17;
+$green: #8ec138;
+
+* {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+// Header
+.app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    box-shadow: $box-shadow;
+
+    .logo {
+        a {
+            cursor: pointer;
+
+            img {
+                width: 110px;
+            }
+        }
+
+    }
+
+    nav {
+        ul {
+            display: flex;
+
+            li {
+                a {
+                    color: $black;
+                    font-size: 1rem;
+                    padding: 10px 15px;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: $green;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+// Title
+.title {
+    background: $green;
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.3rem;
+}
+
+// Container
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.half-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 50%;
+    }
+
+    .about-text {
+        width: 40%;
+
+        p {
+            padding-bottom: 4%;
+        }
+    }
+
+    .contact-text {
+        &:hover {
+            color: $green;
+        }
+    }
 }
