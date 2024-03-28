@@ -3,7 +3,9 @@
 $box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 $black: #0b0a17;
 $green: #8ec138;
+$light-color: #666;
 
+// Utilities
 * {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
@@ -14,6 +16,22 @@ $green: #8ec138;
     box-sizing: border-box;
     transition: all .2s linear;
 }
+
+.btn {
+    border: none;
+    a {
+        border: 1px solid $green;
+        color: $black;
+        border-radius: 5px;
+        padding: 10px;
+
+        &:hover {
+            background-color: $green;
+            color: #fff;
+        }
+    }
+}
+
 
 // Header
 .app-header {
@@ -55,6 +73,38 @@ $green: #8ec138;
 
         }
     }
+}
+
+// Banner 
+.banner {
+    background: url("./assets/img/banner.jpg") no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+
+    .banner-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+
+        img {
+            width: 25%;
+        }
+
+        h1 {
+            color: $green;
+            font-size: 2rem;
+            letter-spacing: 3px;
+        }
+
+        p {
+            margin: 3% 10%;
+            text-align: center;
+            color: $light-color;
+        }
+    }
+
 }
 
 // Title
@@ -106,3 +156,84 @@ $green: #8ec138;
 }
 
 // Footer
+.footer {
+    background-color: #f3f3f3;
+    padding: 3rem 0rem;
+    margin-top: 0;
+
+    .boxes-footer {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 13rem;
+
+        .box-footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                width: 150px;
+            }
+
+            p {
+                font-size: 1rem;
+                color: $black;
+                padding: .2rem 0;
+            }
+
+            li {
+                margin-bottom: .5rem;
+
+                a {
+                    font-size: 1rem;
+                    color: $black;
+
+                    &:hover {
+                        color: $green;
+                    }
+                }
+
+
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                margin-bottom: .8rem;
+                color: $black;
+            }
+
+            .icon-information {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            a {
+                font-size: 1rem;
+                margin-bottom: .5rem;
+                color: $black;
+
+                &:hover {
+                    color: $green;
+                }
+            }
+
+            i {
+                font-size: 1.3rem;
+                margin-right: .5rem;
+            }
+
+            .social-icons i {
+                font-size: 1.7rem;
+                margin: .4rem .5rem;
+            }
+        }
+    }
+}

@@ -6,11 +6,11 @@ const Header = ( {navbarItems} ) => {
   return (
     <header className="app-header">
         <div className="logo">
-            <a><img src="https://csksofya.com/img/logo.png" /></a>
+            <a href="/"><img src="https://csksofya.com/img/logo.png" /></a>
         </div>
         <nav>
             <ul>
-                <li><Link to="">Anasayfa</Link></li>
+                <li><Link to="/">Anasayfa</Link></li>
                 <li><Link to="/about">Hakkkımızda</Link></li>
                 <li><Link to="/categories">Kategoriler</Link></li>
                 <li><Link to="/gallery">Galeri</Link></li>

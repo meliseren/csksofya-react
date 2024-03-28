@@ -5,6 +5,7 @@ import './App.scss';
 
 // Component
 import Header from './component/shared/header/Header';
+import HomePage from './view/HomePage';
 import About from './view/About';
 import Categories from './view/Categories';
 import Gallery from './view/Gallery';
@@ -19,6 +20,7 @@ function App() {
           navbarItems={["Anasayfa", "Hakkımızda", "Kategoriler", "Galeri", "İletişim"]}
         />
         <Routes>
+          <Route path="/" element={<HomePage />} />
           <Route path="/About" element={<About />} />
           <Route path="/Categories" element={<Categories />} />
           <Route path="/Gallery" element={<Gallery />} />

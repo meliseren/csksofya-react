@@ -4,8 +4,8 @@ import { Link } from "react-router-dom"
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="box-footer">
-        <div className="first-box">
+      <div className="boxes-footer">
+        <div className="box-footer">
           <div className="logo-footer">
             <a><img src="https://csksofya.com/img/logo.png" /></a>
           </div>
@@ -13,7 +13,7 @@ const Footer = () => {
           <p>Copyright 2023 © Her Hakkı Saklıdır.</p>
           <p>Csk Sofya Grup Gıda Tur. İnş. İç ve Dış Tic. Ltd. Şti.</p>
         </div>
-        <div className="second-box">
+        <div className="box-footer">
           <nav>
             <ul>
               <li><Link to="">Anasayfa</Link></li>
@@ -24,9 +24,9 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div className="third-box">
+        <div className="box-footer">
           <div className="contact-title-footer">
-            <p>İletişim</p>
+            <h2>İletişim</h2>
           </div>
           <div className="icon-information">
             <i className="fa-solid fa-envelope"><a>info@csksofya.com</a></i>
@@ -34,12 +34,13 @@ const Footer = () => {
             <i className="fa-solid fa-phone"><a>+90 (530) 178 12 15</a></i>
           </div>
           <div className="social-icons">
-            <i></i>
-            <i></i>
-            <i></i>
+            <i className="fa-brands fa-facebook-f"></i>
+            <i className="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-twitter"></i>
           </div>
         </div>
       </div>
+
     </div>
   )
 }
