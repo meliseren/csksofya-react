@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Contact = () => {
 
@@ -24,13 +24,13 @@ const Contact = () => {
   return (
     <div className="container">
       <p className="title">İLETİŞİM</p>
-      <div className="half-container">
+      <div className="contact">
         {GoogleMaps()}
         <div className="contact-text">
-        <i class="fa-solid fa-location-dot"><a>Seyrantepe Mah. Altınay Cad. & Gökdeniz Sok. No:7 34418 Kağıthane/İstanbul Türkiye</a></i>
-          <i className="fa-solid fa-envelope"><a>info@csksofya.com</a></i>
-          <i className="fa-solid fa-phone"><a>+90 (533) 150 45 54</a></i>
-          <i className="fa-solid fa-phone"><a>+90 (530) 178 12 15</a></i>
+          <a><i className="fa-solid fa-location-dot"></i>Seyrantepe Mah. Altınay Cad. & Gökdeniz Sok. No:7 34418 Kağıthane/İstanbul Türkiye</a>
+          <a><i className="fa-solid fa-envelope"></i>info@csksofya.com</a>
+          <a><i className="fa-solid fa-phone"></i>+90 (533) 150 45 54</a>
+          <a><i className="fa-solid fa-phone"></i>+90 (530) 178 12 15</a>
         </div>
       </div>
     </div>

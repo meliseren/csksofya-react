@@ -19,6 +19,7 @@ $light-color: #666;
 
 .btn {
     border: none;
+
     a {
         border: 1px solid $green;
         color: $black;
@@ -149,9 +150,46 @@ $light-color: #666;
     }
 
     .contact-text {
+        display: flex;
+        justify-content: column;
         &:hover {
             color: $green;
         }
+    }
+}
+
+// Contact
+.contact {
+    display: flex;
+    margin-bottom: 60px;
+
+    img {
+        width: 60%;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: $black;
+    }
+
+    a {
+        color: $black;
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    i {
+        margin-right: 2%;
+        font-size: 1.2rem;
+    }
+
+    .contact-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.2rem;
     }
 }
 
@@ -234,6 +272,64 @@ $light-color: #666;
                 font-size: 1.7rem;
                 margin: .4rem .5rem;
             }
+        }
+    }
+}
+
+// LoginView
+$panel-primary-color: #8ec138;
+$panel-secondary-color: #0b0a17;
+$panel-light-color: #f0f1f3;
+$panel-box-shadow: 1rem .5rem 1rem rgba(0, 0, 0, .1);
+.login {
+    background-color: $panel-light-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .login-box {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background: #fff;
+        border: 1px solid $panel-light-color;
+        border-radius: .5rem;
+
+        .login-title {
+            display: flex;
+            align-items:center;
+            border-bottom: 1px solid $panel-primary-color;
+
+            i {
+                margin-right: 2%;
+            }
+        }
+
+        .login-logo {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 180px;
+            }
+        }
+
+        .form-control {
+            margin: .5rem;
+
+            input {
+                width: 22rem;
+                height: 2rem;
+            }
+        }
+
+        .btn-signin {
+            cursor: pointer;
+            border: 1px solid $panel-primary-color;
+            border-radius: 5px;
+            padding: 10px 0;
+            background-color: $panel-primary-color;
+            color: #fff;
         }
     }
 }

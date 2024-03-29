@@ -11,25 +11,22 @@ import Categories from './view/Categories';
 import Gallery from './view/Gallery';
 import Contact from './view/Contact';
 import Footer from './component/shared/footer/Footer';
+import LoginView from "./view/auth/login/LoginView";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="app">
-        <Header
-          navbarItems={["Anasayfa", "Hakkımızda", "Kategoriler", "Galeri", "İletişim"]}
-        />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Categories" element={<Categories />} />
-          <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/" element={<><Header navbarItems={["Anasayfa", "Hakkımızda", "Kategoriler", "Galeri", "İletişim"]} /><HomePage /><Footer /></>} />
+          <Route path="/About" element={<><Header navbarItems={["Anasayfa", "Hakkımızda", "Kategoriler", "Galeri", "İletişim"]} /><About /><Footer /></>} />
+          <Route path="/Categories" element={<><Header navbarItems={["Anasayfa", "Hakkımızda", "Kategoriler", "Galeri", "İletişim"]} /><Categories /><Footer /></>} />
+          <Route path="/Gallery" element={<><Header navbarItems={["Anasayfa", "Hakkımızda", "Kategoriler", "Galeri", "İletişim"]} /><Gallery /><Footer /></>} />
+          <Route path="/Contact" element={<><Header navbarItems={["Anasayfa", "Hakkımızda", "Kategoriler", "Galeri", "İletişim"]} /><Contact /><Footer /></>} />
+          <Route path="/LoginView" element={<LoginView />} />
         </Routes>
-        <Footer />
       </div>
     </BrowserRouter>
-
   );
 }
 

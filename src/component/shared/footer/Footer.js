@@ -29,14 +29,14 @@ const Footer = () => {
             <h2>İletişim</h2>
           </div>
           <div className="icon-information">
-            <i className="fa-solid fa-envelope"><a>info@csksofya.com</a></i>
-            <i className="fa-solid fa-phone"><a>+90 (533) 150 45 54</a></i>
-            <i className="fa-solid fa-phone"><a>+90 (530) 178 12 15</a></i>
+            <a><i className="fa-solid fa-envelope"></i>info@csksofya.com</a>
+            <a><i className="fa-solid fa-phone"></i>+90 (533) 150 45 54</a>
+            <a><i className="fa-solid fa-phone"></i>+90 (530) 178 12 15</a>
           </div>
           <div className="social-icons">
-            <i className="fa-brands fa-facebook-f"></i>
-            <i className="fa-brands fa-instagram"></i>
-            <i className="fa-brands fa-twitter"></i>
+            <a><i className="fa-brands fa-facebook-f"></i></a>
+            <a><i className="fa-brands fa-instagram"></i></a>
+            <a><i className="fa-brands fa-twitter"></i></a>
           </div>
         </div>
       </div>
