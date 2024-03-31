@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const LoginView = () => {
-    const handleLogin = () => {
-        console.log("Clicked!")
+
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
+    const [usernameErr, setUsernameErr] = useState(false);
+    const [passwordErr, setPasswordErr] = useState(false);
+
+    const handleLogin = (event) => {
+        event.preventDefault();
+
+        if (username && password) {
+            setUsernameErr(false);
+            setPasswordErr(false);
+            console.log(username, password);
+        }
+        else {
+            setUsernameErr(!username);
+            setPasswordErr(!password);
+        }
     }
+
     return (
         <div className="login">
             <div className="login-box">
@@ -18,18 +36,32 @@ const LoginView = () => {
                     <p>Kullanıcı Adı</p>
                     <input
                         type="text"
+                        onChange={(event) => {
+                            setUsername(event.target.value);
+                        }}
+                        value={username}
                     />
+                    {usernameErr && <p className="panel-input-err">* Kullanıcı adı boş olamaz!</p>}
                 </div>
                 <div className="form-control">
                     <p>Parola</p>
                     <input
                         type="password"
+                        onChange={(event) => {
+                            setPassword(event.target.value);
+                        }}
+                        value={password}
                     />
+                    {passwordErr && <p className="panel-input-err">* Şifre boş olamaz!</p>}
                 </div>
-                <button
-                    onClick={handleLogin}
-                    className="btn btn-signin"
-                ><i className="fa-solid fa-check"></i>Giriş Yap</button>
+                <div className="btn-container-signin">
+                    <button
+                        onClick={handleLogin}
+                        className="btn btn-signin"
+                    >
+                        <i className="fa-solid fa-check"></i>Giriş Yap
+                    </button>
+                </div>
             </div>
         </div>
     )

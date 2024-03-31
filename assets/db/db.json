@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+            "id": "f34c0bb5-bc48-443a-a89d-13cbf6b97854",
+            "username": "meliseren",
+            "password": "123456"
+          },
+          {
+            "id": "caf1960f-59df-4c67-bd94-8c7377969bc7",
+            "username": "buseugras",
+            "password": "loremipsum"
+          }
+    ]
+}

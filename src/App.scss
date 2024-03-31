@@ -78,7 +78,7 @@ $light-color: #666;
 
 // Banner 
 .banner {
-    background: url("./assets/img/banner.jpg") no-repeat center center/cover;
+    background: url("./asset/img/banner.jpg") no-repeat center center/cover;
     margin: 0;
     padding: 0;
 
@@ -299,10 +299,19 @@ $panel-box-shadow: 1rem .5rem 1rem rgba(0, 0, 0, .1);
         .login-title {
             display: flex;
             align-items:center;
+            gap: .2rem;
+            margin: .3rem 0;
             border-bottom: 1px solid $panel-primary-color;
 
             i {
-                margin-right: 2%;
+                margin-right: 1%;
+                font-size: .9rem;
+                margin-left: 3%;
+            }
+
+            p {
+                margin: .3rem 0;
+                font-size: .8rem;
             }
         }
 
@@ -315,21 +324,57 @@ $panel-box-shadow: 1rem .5rem 1rem rgba(0, 0, 0, .1);
         }
 
         .form-control {
-            margin: .5rem;
+            margin: .3rem 2rem;
+
+            p {
+                margin-bottom: .5rem;
+            }
 
             input {
                 width: 22rem;
-                height: 2rem;
+                height: 2.5rem;
+                border-radius: 5px;
+                border: 1px solid black;
+                padding-left: .5rem;
+
+                &:focus-visible {
+                    border-color: $panel-primary-color;
+                    outline-offset: 1px;
+                    outline: 1px;
+                }
+            }
+
+            .panel-input-err {
+                color: #ff0000;
+                font-size: .7rem;
+                height: 0;
             }
         }
 
-        .btn-signin {
-            cursor: pointer;
-            border: 1px solid $panel-primary-color;
-            border-radius: 5px;
-            padding: 10px 0;
-            background-color: $panel-primary-color;
-            color: #fff;
+        .btn-container-signin {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .btn-signin {
+                cursor: pointer;
+                border: 1px solid $panel-primary-color;
+                border-radius: 5px;
+                padding: 10px 0;
+                background-color: $panel-primary-color;
+                color: #fff;
+                font-size: 1.1rem;
+                font-weight: bold;
+                margin: 2rem;
+                width: 10rem;
+                height: 3rem;
+
+                i {
+                    margin-right: 4%;
+                }
+            }
         }
+
+        
     }
 }
